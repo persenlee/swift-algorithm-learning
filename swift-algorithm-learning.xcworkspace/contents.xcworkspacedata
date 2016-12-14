@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RadixTree/RadixTree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tree/Tree.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkedList/LinkedList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Deque/Deque.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Queue/Queue.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Stack/Stack.xcodeproj">
+   </FileRef>
+</Workspace>
