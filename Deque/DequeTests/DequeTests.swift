@@ -21,16 +21,26 @@ class DequeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testEmptyDeque() {
+        var deque = Deque<Int>()
+        XCTAssertTrue(deque.isEmpty)
+        XCTAssertEqual(deque.count, 0)
+        XCTAssertNil(deque.dequeueBack())
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testManyElementsDeque() {
+        var deque = Deque<Int>()
+        deque.enqueue(3)
+        deque.enqueue(4)
+        deque.enqueueFront(2)
+        deque.enqueueFront(1)
+        
+        XCTAssertTrue(!deque.isEmpty)
+        XCTAssertEqual(deque.count, 4)
+        XCTAssertEqual(deque.peek(), 1)
+        XCTAssertEqual(deque.peekBack(), 4)
+        XCTAssertEqual(deque.dequeue(), 1)
+        XCTAssertEqual(deque.dequeueBack(), 4)
+        XCTAssertEqual(deque.count, 2)
     }
-    
 }

@@ -24,7 +24,11 @@ public struct Stack<T> {
     }
     
     public mutating func pop() -> T? {
-        return array.popLast()
+        if isEmpty {
+            return nil
+        } else {
+            return array.popLast()
+        }
     }
     
     public func peek() -> T? {

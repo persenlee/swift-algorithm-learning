@@ -10,6 +10,7 @@
 		AFA466BA1E010E0300ACC71D /* Deque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA466B01E010E0300ACC71D /* Deque.framework */; };
 		AFA466BF1E010E0300ACC71D /* DequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA466BE1E010E0300ACC71D /* DequeTests.swift */; };
 		AFA467371E010EC700ACC71D /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA467361E010EC700ACC71D /* Deque.swift */; };
+		AFA467381E01101500ACC71D /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA467361E010EC700ACC71D /* Deque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA467381E01101500ACC71D /* Deque.swift in Sources */,
 				AFA466BF1E010E0300ACC71D /* DequeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

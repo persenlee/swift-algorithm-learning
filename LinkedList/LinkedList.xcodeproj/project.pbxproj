@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		AFA466DE1E010E2800ACC71D /* LinkedList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA466D41E010E2800ACC71D /* LinkedList.framework */; };
 		AFA466E31E010E2800ACC71D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA466E21E010E2800ACC71D /* LinkedListTests.swift */; };
-		AFA466E51E010E2800ACC71D /* LinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA466D71E010E2800ACC71D /* LinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA4673A1E0113F400ACC71D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA467391E0113F400ACC71D /* LinkedList.swift */; };
+		AFA4673B1E011D1600ACC71D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA467391E0113F400ACC71D /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,11 @@
 
 /* Begin PBXFileReference section */
 		AFA466D41E010E2800ACC71D /* LinkedList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LinkedList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFA466D71E010E2800ACC71D /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		AFA466D81E010E2800ACC71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA466DD1E010E2800ACC71D /* LinkedListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA466E21E010E2800ACC71D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 		AFA466E41E010E2800ACC71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA467391E0113F400ACC71D /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +72,7 @@
 		AFA466D61E010E2800ACC71D /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				AFA466D71E010E2800ACC71D /* LinkedList.h */,
+				AFA467391E0113F400ACC71D /* LinkedList.swift */,
 				AFA466D81E010E2800ACC71D /* Info.plist */,
 			);
 			path = LinkedList;
@@ -93,7 +94,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA466E51E010E2800ACC71D /* LinkedList.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,7 @@
 				TargetAttributes = {
 					AFA466D31E010E2800ACC71D = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					AFA466DC1E010E2800ACC71D = {
@@ -196,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA4673A1E0113F400ACC71D /* LinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA4673B1E011D1600ACC71D /* LinkedList.swift in Sources */,
 				AFA466E31E010E2800ACC71D /* LinkedListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +320,7 @@
 		AFA466E91E010E2800ACC71D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -330,6 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.LinkedList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,6 +342,7 @@
 		AFA466EA1E010E2800ACC71D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 		AFA466EC1E010E2800ACC71D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LinkedListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -369,6 +376,7 @@
 		AFA466ED1E010E2800ACC71D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LinkedListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
