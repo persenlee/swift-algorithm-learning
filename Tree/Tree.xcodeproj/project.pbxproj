@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF3632B61E02423400101A41 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3632B51E02423400101A41 /* Tree.swift */; };
+		AF3632B71E0245F500101A41 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3632B51E02423400101A41 /* Tree.swift */; };
 		AFA467021E010E5A00ACC71D /* Tree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA466F81E010E5A00ACC71D /* Tree.framework */; };
 		AFA467071E010E5A00ACC71D /* TreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA467061E010E5A00ACC71D /* TreeTests.swift */; };
-		AFA467091E010E5A00ACC71D /* Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA466FB1E010E5A00ACC71D /* Tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,8 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF3632B51E02423400101A41 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		AFA466F81E010E5A00ACC71D /* Tree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFA466FB1E010E5A00ACC71D /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		AFA466FC1E010E5A00ACC71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA467011E010E5A00ACC71D /* TreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA467061E010E5A00ACC71D /* TreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTests.swift; sourceTree = "<group>"; };
@@ -71,7 +72,7 @@
 		AFA466FA1E010E5A00ACC71D /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				AFA466FB1E010E5A00ACC71D /* Tree.h */,
+				AF3632B51E02423400101A41 /* Tree.swift */,
 				AFA466FC1E010E5A00ACC71D /* Info.plist */,
 			);
 			path = Tree;
@@ -93,7 +94,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA467091E010E5A00ACC71D /* Tree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,7 @@
 				TargetAttributes = {
 					AFA466F71E010E5A00ACC71D = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					AFA467001E010E5A00ACC71D = {
@@ -196,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3632B61E02423400101A41 /* Tree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA467071E010E5A00ACC71D /* TreeTests.swift in Sources */,
+				AF3632B71E0245F500101A41 /* Tree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +320,7 @@
 		AFA4670D1E010E5A00ACC71D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -330,6 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.Tree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,6 +342,7 @@
 		AFA4670E1E010E5A00ACC71D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 		AFA467101E010E5A00ACC71D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TreeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -369,6 +376,7 @@
 		AFA467111E010E5A00ACC71D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TreeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -397,6 +405,7 @@
 				AFA4670E1E010E5A00ACC71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFA4670F1E010E5A00ACC71D /* Build configuration list for PBXNativeTarget "TreeTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				AFA467111E010E5A00ACC71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

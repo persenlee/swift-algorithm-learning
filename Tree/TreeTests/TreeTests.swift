@@ -21,16 +21,30 @@ class TreeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTree() {
+        let creature = TreeNode(value: "creature")
+        let animal = TreeNode(value: "animal")
+        let bird = TreeNode(value: "bird")
+        let fish = TreeNode(value: "fish")
+        creature.addChild(animal)
+        creature.addChild(bird)
+        creature.addChild(fish)
+        
+        let human = TreeNode(value: "hunman")
+        let monkey = TreeNode(value: "monkey")
+        animal.addChild(human)
+        animal.addChild(monkey)
+        
+        let duck = TreeNode(value: "duck")
+        let swan = TreeNode(value: "swan")
+        let chiken = TreeNode(value: "chiken")
+        
+        bird.addChild(duck)
+        bird.addChild(swan)
+        bird.addChild(chiken)
+        
+        print(creature)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
