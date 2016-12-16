@@ -60,8 +60,47 @@ class SortTests: XCTestCase {
     }
     
     func testReduceInsertionSort() {
-        var ary = [4,5,1,0,9,3,8]
-        sampleInsertionSort(&ary)
+        var ary = [4,5,1,34,0,9,3,8,22]
+        reduceInsertionSort(&ary)
         print(ary)
+    }
+    
+    func testShellSort() {
+//        var ary0 = [Int]()
+//        shellSort(&ary0, partial: 1)
+//        print(ary0)
+        
+        var ary1 = [4]
+        shellSort(&ary1, partial: 0)
+        print(ary1)
+        
+        var ary2 = [4,5]
+        shellSort(&ary2, partial: 1)
+        print(ary2)
+        
+         var ary3 = [4,5,1]
+        shellSort(&ary3, partial: 2)
+        print(ary3)
+        
+        var ary = [4,5,1,34,0,9,3,8,22]
+        shellSort(&ary, partial: ary.count - 1)
+        print(ary)
+        
+    }
+    
+    
+    
+    func testBucketSort() {
+        let ary = [4,5,1,34,0,9,3,8,22]
+        var buckets = [Bucket<Int>(capacity: 5),Bucket<Int>(capacity: 5),Bucket<Int>(capacity: 5)]
+        let result = bucketSort(ary, buckets: &buckets, sorter: QuickSorter(), distributer: ModDistributer())
+        print(result)
+    }
+    
+}
+
+extension Int: Sortable {
+    public func toInt() -> Int {
+        return self
     }
 }
