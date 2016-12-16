@@ -97,6 +97,12 @@ class SortTests: XCTestCase {
         print(result)
     }
     
+    func testlsdRadixSort() {
+        var ary = [4,5,1,34,0,9,3,8,22]
+        lsdRadixSort(&ary, radix: 8)
+        print(ary)
+    }
+    
 }
 
 extension Int: Sortable {
