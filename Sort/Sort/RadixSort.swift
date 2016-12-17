@@ -42,11 +42,11 @@ public func lsdRadixSort<T: Sortable>(_ array: inout [T],radix: Int) {
     }
 }
 
-//warning only support radix = 10
+
 /// 最高位优先法
 ///
 /// - Parameter array: <#array description#>
-public func msdRadixSort<T: Sortable>(_ array: inout [T],radix: Int) {
+public func msdRadixSort<T: Sortable>(_ array: inout [T],radix: Int,minus: Int = 0) {
     if array.count < 2 {
         return
     }
@@ -58,6 +58,8 @@ public func msdRadixSort<T: Sortable>(_ array: inout [T],radix: Int) {
         counter += 1
     }
     counter -= 1
+    counter = counter > 0 ? counter - minus : counter
+
         
     for element in array {
         let index = (element.toInt() / Int(pow(Double(radix), Double(counter)))) % radix
@@ -66,7 +68,7 @@ public func msdRadixSort<T: Sortable>(_ array: inout [T],radix: Int) {
     
     for (index,var bucket) in buckets.enumerated() {
         if bucket.count > 1 {
-            msdRadixSort(&bucket, radix: radix)
+            msdRadixSort(&bucket, radix: radix,minus: 1)
             buckets[index] = bucket
         }
     }
@@ -78,5 +80,4 @@ public func msdRadixSort<T: Sortable>(_ array: inout [T],radix: Int) {
             array.append(element)
         }
     }
-
 }

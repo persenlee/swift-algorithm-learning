@@ -104,8 +104,8 @@ class SortTests: XCTestCase {
     }
     
     func testmsdRadixSort() {
-        var ary = [4,5,1,34,0,9,3,8,22,10]
-        msdRadixSort(&ary, radix: 10)
+        var ary = [4,5,1,34,0,9,3,8,22,10,11]
+        msdRadixSort(&ary, radix: 8)
         print(ary)
     }
     
