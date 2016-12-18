@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+
+public func heapSort<T: Sortable>(_ array: [T]) {
+    
+}
+
+func heapAdjust<T: Sortable>(_ array: [T],start: Int,end: Int) {
+    
+}
