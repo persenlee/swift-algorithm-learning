@@ -8,11 +8,10 @@
 
 import Foundation
 
-
-public func heapSort<T: Sortable>(_ array: [T]) {
-    
+import Heap
+public func heapSort<T: Sortable>(_ array: [T]) -> [T] {
+    var heap = Heap<T>()
+    heap.buildFromArray(array)
+    return heap.sort()
 }
 
-func heapAdjust<T: Sortable>(_ array: [T],start: Int,end: Int) {
-    
-}

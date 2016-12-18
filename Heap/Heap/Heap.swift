@@ -14,8 +14,13 @@ public struct Heap<T: Comparable>{
     public var count: Int {
         return array.count
     }
+    
     public var isEmpty: Bool {
         return array.isEmpty
+    }
+    
+    public init() {
+        
     }
     
     public mutating func buildFromArray(_ array: [T]) {
@@ -110,10 +115,52 @@ public struct Heap<T: Comparable>{
         }
         
     }
+    
 }
+
 
 extension Heap: CustomStringConvertible {
     public var description: String {
         return "\(array)"
     }
+}
+
+extension Heap {
+    public mutating func sort() -> [T] {
+        for i in stride(from:array.count - 1, through: 1, by: -1) {
+            swap(&array[0], &array[i])
+            shiftDown(index: 0, heapSize: i)
+        }
+        return array
+    }
+    
+    public mutating func shiftDown(index: Int , heapSize: Int) {
+        var parentIndex = index
+        while true {
+            let leftIndex = 2 * parentIndex + 1
+            let rightIndex = leftIndex + 1
+            
+            var maxIndex = parentIndex
+            
+            if  leftIndex < heapSize && self.array[maxIndex] < self.array[leftIndex] {
+                maxIndex = leftIndex
+            }
+            
+            
+            
+            if rightIndex < heapSize && self.array[maxIndex] < self.array[rightIndex] {
+                maxIndex = rightIndex
+            }
+            
+            
+            if maxIndex != parentIndex {
+                swap(&self.array[maxIndex], &self.array[parentIndex])
+                parentIndex = maxIndex
+            } else {
+                return
+            }
+        }
+        
+    }
+
 }

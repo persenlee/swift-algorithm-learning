@@ -109,6 +109,12 @@ class SortTests: XCTestCase {
         print(ary)
     }
     
+    func testHeapSort() {
+        let ary = [4,5,1,34,0,9,3,8,22,10,11]
+        let sortedAry = heapSort(ary)
+        print(sortedAry)
+    }
+    
 }
 
 extension Int: Sortable {

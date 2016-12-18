@@ -18,6 +18,7 @@
 		AF996AB61E0265AC00014A47 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF996AB51E0265AC00014A47 /* HeapSort.swift */; };
 		AF996AB81E0265B500014A47 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF996AB71E0265B500014A47 /* MergeSort.swift */; };
 		AF996ABA1E02662400014A47 /* CountingSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF996AB91E02662400014A47 /* CountingSort.swift */; };
+		B397EDA11E067E00002FB459 /* Heap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B397EDA01E067E00002FB459 /* Heap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		AF996AB71E0265B500014A47 /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		AF996AB91E02662400014A47 /* CountingSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
 		AF996ABC1E0279A300014A47 /* Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sort.playground; sourceTree = "<group>"; };
+		B397EDA01E067E00002FB459 /* Heap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Heap.framework; path = "../../../Library/Developer/Xcode/DerivedData/swift-algorithm-learning-fudtflkqxcrfybgblqlyxszykowz/Build/Products/Debug/Heap.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B397EDA11E067E00002FB459 /* Heap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 				AF996A911E0264F300014A47 /* Sort */,
 				AF996A9C1E0264F300014A47 /* SortTests */,
 				AF996A901E0264F300014A47 /* Products */,
+				B397ED9F1E067DFF002FB459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +114,14 @@
 				AF996A9F1E0264F300014A47 /* Info.plist */,
 			);
 			path = SortTests;
+			sourceTree = "<group>";
+		};
+		B397ED9F1E067DFF002FB459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B397EDA01E067E00002FB459 /* Heap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
