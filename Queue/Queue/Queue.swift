@@ -10,7 +10,9 @@ import Foundation
 
 public struct Queue<T> {
     private var array = [T]()
-    
+    public init() {
+        
+    }
     public var isEmpty: Bool {
         return array.isEmpty
     }
