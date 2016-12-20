@@ -28,6 +28,7 @@ class BinaryTreeTests: XCTestCase {
         let node1 = BinaryTree.TreeNode(node3, 1, node4)
         let root = BinaryTree.TreeNode(node1, 0, node2)
         print(root)
+        print("depath: \(root.depth),count: \(root.count)")
     }
     
     func testPreTraverse() {
