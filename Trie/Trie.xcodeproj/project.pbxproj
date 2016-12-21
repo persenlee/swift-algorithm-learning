@@ -7,89 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF6C26E81E0A51B800D236BC /* RadixTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C26E71E0A51B800D236BC /* RadixTree.swift */; };
-		AFA467261E010E9100ACC71D /* RadixTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA4671C1E010E9100ACC71D /* RadixTree.framework */; };
-		AFA4672B1E010E9100ACC71D /* RadixTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4672A1E010E9100ACC71D /* RadixTreeTests.swift */; };
+		AF6783B71E0A196100DA7EFB /* Trie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6783AD1E0A196000DA7EFB /* Trie.framework */; };
+		AF6783BC1E0A196100DA7EFB /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6783BB1E0A196100DA7EFB /* TrieTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AFA467271E010E9100ACC71D /* PBXContainerItemProxy */ = {
+		AF6783B81E0A196100DA7EFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AFA467131E010E9100ACC71D /* Project object */;
+			containerPortal = AF6783A41E0A196000DA7EFB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AFA4671B1E010E9100ACC71D;
-			remoteInfo = RadixTree;
+			remoteGlobalIDString = AF6783AC1E0A196000DA7EFB;
+			remoteInfo = Trie;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF6C26E71E0A51B800D236BC /* RadixTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadixTree.swift; sourceTree = "<group>"; };
-		AFA4671C1E010E9100ACC71D /* RadixTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RadixTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFA467201E010E9100ACC71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA467251E010E9100ACC71D /* RadixTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadixTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFA4672A1E010E9100ACC71D /* RadixTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixTreeTests.swift; sourceTree = "<group>"; };
-		AFA4672C1E010E9100ACC71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6783AD1E0A196000DA7EFB /* Trie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6783B11E0A196100DA7EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6783B61E0A196100DA7EFB /* TrieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6783BB1E0A196100DA7EFB /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
+		AF6783BD1E0A196100DA7EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AFA467181E010E9100ACC71D /* Frameworks */ = {
+		AF6783A91E0A196000DA7EFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFA467221E010E9100ACC71D /* Frameworks */ = {
+		AF6783B31E0A196100DA7EFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA467261E010E9100ACC71D /* RadixTree.framework in Frameworks */,
+				AF6783B71E0A196100DA7EFB /* Trie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AFA467121E010E9100ACC71D = {
+		AF6783A31E0A196000DA7EFB = {
 			isa = PBXGroup;
 			children = (
-				AFA4671E1E010E9100ACC71D /* RadixTree */,
-				AFA467291E010E9100ACC71D /* RadixTreeTests */,
-				AFA4671D1E010E9100ACC71D /* Products */,
+				AF6783AF1E0A196100DA7EFB /* Trie */,
+				AF6783BA1E0A196100DA7EFB /* TrieTests */,
+				AF6783AE1E0A196100DA7EFB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AFA4671D1E010E9100ACC71D /* Products */ = {
+		AF6783AE1E0A196100DA7EFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFA4671C1E010E9100ACC71D /* RadixTree.framework */,
-				AFA467251E010E9100ACC71D /* RadixTreeTests.xctest */,
+				AF6783AD1E0A196000DA7EFB /* Trie.framework */,
+				AF6783B61E0A196100DA7EFB /* TrieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFA4671E1E010E9100ACC71D /* RadixTree */ = {
+		AF6783AF1E0A196100DA7EFB /* Trie */ = {
 			isa = PBXGroup;
 			children = (
-				AFA467201E010E9100ACC71D /* Info.plist */,
-				AF6C26E71E0A51B800D236BC /* RadixTree.swift */,
+				AF6783B11E0A196100DA7EFB /* Info.plist */,
 			);
-			path = RadixTree;
+			path = Trie;
 			sourceTree = "<group>";
 		};
-		AFA467291E010E9100ACC71D /* RadixTreeTests */ = {
+		AF6783BA1E0A196100DA7EFB /* TrieTests */ = {
 			isa = PBXGroup;
 			children = (
-				AFA4672A1E010E9100ACC71D /* RadixTreeTests.swift */,
-				AFA4672C1E010E9100ACC71D /* Info.plist */,
+				AF6783BB1E0A196100DA7EFB /* TrieTests.swift */,
+				AF6783BD1E0A196100DA7EFB /* Info.plist */,
 			);
-			path = RadixTreeTests;
+			path = TrieTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AFA467191E010E9100ACC71D /* Headers */ = {
+		AF6783AA1E0A196000DA7EFB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,90 +96,89 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AFA4671B1E010E9100ACC71D /* RadixTree */ = {
+		AF6783AC1E0A196000DA7EFB /* Trie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA467301E010E9100ACC71D /* Build configuration list for PBXNativeTarget "RadixTree" */;
+			buildConfigurationList = AF6783C11E0A196100DA7EFB /* Build configuration list for PBXNativeTarget "Trie" */;
 			buildPhases = (
-				AFA467171E010E9100ACC71D /* Sources */,
-				AFA467181E010E9100ACC71D /* Frameworks */,
-				AFA467191E010E9100ACC71D /* Headers */,
-				AFA4671A1E010E9100ACC71D /* Resources */,
+				AF6783A81E0A196000DA7EFB /* Sources */,
+				AF6783A91E0A196000DA7EFB /* Frameworks */,
+				AF6783AA1E0A196000DA7EFB /* Headers */,
+				AF6783AB1E0A196000DA7EFB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RadixTree;
-			productName = RadixTree;
-			productReference = AFA4671C1E010E9100ACC71D /* RadixTree.framework */;
+			name = Trie;
+			productName = Trie;
+			productReference = AF6783AD1E0A196000DA7EFB /* Trie.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFA467241E010E9100ACC71D /* RadixTreeTests */ = {
+		AF6783B51E0A196100DA7EFB /* TrieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA467331E010E9100ACC71D /* Build configuration list for PBXNativeTarget "RadixTreeTests" */;
+			buildConfigurationList = AF6783C41E0A196100DA7EFB /* Build configuration list for PBXNativeTarget "TrieTests" */;
 			buildPhases = (
-				AFA467211E010E9100ACC71D /* Sources */,
-				AFA467221E010E9100ACC71D /* Frameworks */,
-				AFA467231E010E9100ACC71D /* Resources */,
+				AF6783B21E0A196100DA7EFB /* Sources */,
+				AF6783B31E0A196100DA7EFB /* Frameworks */,
+				AF6783B41E0A196100DA7EFB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AFA467281E010E9100ACC71D /* PBXTargetDependency */,
+				AF6783B91E0A196100DA7EFB /* PBXTargetDependency */,
 			);
-			name = RadixTreeTests;
-			productName = RadixTreeTests;
-			productReference = AFA467251E010E9100ACC71D /* RadixTreeTests.xctest */;
+			name = TrieTests;
+			productName = TrieTests;
+			productReference = AF6783B61E0A196100DA7EFB /* TrieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AFA467131E010E9100ACC71D /* Project object */ = {
+		AF6783A41E0A196000DA7EFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = duomai;
 				TargetAttributes = {
-					AFA4671B1E010E9100ACC71D = {
+					AF6783AC1E0A196000DA7EFB = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
-					AFA467241E010E9100ACC71D = {
+					AF6783B51E0A196100DA7EFB = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = AFA467161E010E9100ACC71D /* Build configuration list for PBXProject "RadixTree" */;
+			buildConfigurationList = AF6783A71E0A196000DA7EFB /* Build configuration list for PBXProject "Trie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AFA467121E010E9100ACC71D;
-			productRefGroup = AFA4671D1E010E9100ACC71D /* Products */;
+			mainGroup = AF6783A31E0A196000DA7EFB;
+			productRefGroup = AF6783AE1E0A196100DA7EFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFA4671B1E010E9100ACC71D /* RadixTree */,
-				AFA467241E010E9100ACC71D /* RadixTreeTests */,
+				AF6783AC1E0A196000DA7EFB /* Trie */,
+				AF6783B51E0A196100DA7EFB /* TrieTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AFA4671A1E010E9100ACC71D /* Resources */ = {
+		AF6783AB1E0A196000DA7EFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFA467231E010E9100ACC71D /* Resources */ = {
+		AF6783B41E0A196100DA7EFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,34 +188,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AFA467171E010E9100ACC71D /* Sources */ = {
+		AF6783A81E0A196000DA7EFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6C26E81E0A51B800D236BC /* RadixTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFA467211E010E9100ACC71D /* Sources */ = {
+		AF6783B21E0A196100DA7EFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA4672B1E010E9100ACC71D /* RadixTreeTests.swift in Sources */,
+				AF6783BC1E0A196100DA7EFB /* TrieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AFA467281E010E9100ACC71D /* PBXTargetDependency */ = {
+		AF6783B91E0A196100DA7EFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFA4671B1E010E9100ACC71D /* RadixTree */;
-			targetProxy = AFA467271E010E9100ACC71D /* PBXContainerItemProxy */;
+			target = AF6783AC1E0A196000DA7EFB /* Trie */;
+			targetProxy = AF6783B81E0A196100DA7EFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AFA4672E1E010E9100ACC71D /* Debug */ = {
+		AF6783BF1E0A196100DA7EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		AFA4672F1E010E9100ACC71D /* Release */ = {
+		AF6783C01E0A196100DA7EFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,10 +310,9 @@
 			};
 			name = Release;
 		};
-		AFA467311E010E9100ACC71D /* Debug */ = {
+		AF6783C21E0A196100DA7EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -326,21 +320,19 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = RadixTree/Info.plist;
+				INFOPLIST_FILE = Trie/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.RadixTree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.Trie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		AFA467321E010E9100ACC71D /* Release */ = {
+		AF6783C31E0A196100DA7EFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -348,37 +340,35 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = RadixTree/Info.plist;
+				INFOPLIST_FILE = Trie/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.RadixTree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.Trie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		AFA467341E010E9100ACC71D /* Debug */ = {
+		AF6783C51E0A196100DA7EFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RadixTreeTests/Info.plist;
+				INFOPLIST_FILE = TrieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.RadixTreeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.TrieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		AFA467351E010E9100ACC71D /* Release */ = {
+		AF6783C61E0A196100DA7EFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RadixTreeTests/Info.plist;
+				INFOPLIST_FILE = TrieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.RadixTreeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.TrieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -387,34 +377,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFA467161E010E9100ACC71D /* Build configuration list for PBXProject "RadixTree" */ = {
+		AF6783A71E0A196000DA7EFB /* Build configuration list for PBXProject "Trie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFA4672E1E010E9100ACC71D /* Debug */,
-				AFA4672F1E010E9100ACC71D /* Release */,
+				AF6783BF1E0A196100DA7EFB /* Debug */,
+				AF6783C01E0A196100DA7EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFA467301E010E9100ACC71D /* Build configuration list for PBXNativeTarget "RadixTree" */ = {
+		AF6783C11E0A196100DA7EFB /* Build configuration list for PBXNativeTarget "Trie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFA467311E010E9100ACC71D /* Debug */,
-				AFA467321E010E9100ACC71D /* Release */,
+				AF6783C21E0A196100DA7EFB /* Debug */,
+				AF6783C31E0A196100DA7EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		AFA467331E010E9100ACC71D /* Build configuration list for PBXNativeTarget "RadixTreeTests" */ = {
+		AF6783C41E0A196100DA7EFB /* Build configuration list for PBXNativeTarget "TrieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFA467341E010E9100ACC71D /* Debug */,
-				AFA467351E010E9100ACC71D /* Release */,
+				AF6783C51E0A196100DA7EFB /* Debug */,
+				AF6783C61E0A196100DA7EFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AFA467131E010E9100ACC71D /* Project object */;
+	rootObject = AF6783A41E0A196000DA7EFB /* Project object */;
 }

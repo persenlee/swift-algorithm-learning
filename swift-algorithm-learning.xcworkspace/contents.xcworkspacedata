@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Trie/Trie.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BinaryTree/BinaryTree.xcodeproj">
    </FileRef>
    <FileRef
