@@ -21,16 +21,22 @@ class TrieTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testTrie() {
+        let trie = Trie()
+        trie.insert(str: "hit")
+        trie.insert(str: "high")
+        trie.insert(str: "hillton")
+        trie.insert(str: "lot")
+        trie.insert(str: "loss")
+        trie.insert(str: "list")
+        trie.insert(str: "long")
+        trie.printTree()
+        
+        XCTAssertEqual(trie.find(str: "long"), 1)
+        trie.insert(str: "long")
+        XCTAssertEqual(trie.find(str: "long"), 2)
+        trie.remove(str: "long")
+        XCTAssertEqual(trie.find(str: "long"), 1)
     }
     
 }
