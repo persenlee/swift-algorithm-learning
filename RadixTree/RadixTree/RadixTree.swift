@@ -181,6 +181,9 @@ public class RadixTree {
     
     public func remove(_ str: String) -> Bool {
         if str == "" { //root
+            for element in root.children {
+                element.erase()
+            }
             return true
         }
         if root.children.count < 1 {
@@ -216,9 +219,6 @@ public class RadixTree {
     
     public func find(_ str: String) -> Bool {
         if str == "" { //root
-            for element in root.children {
-                element.erase()
-            }
             return true
         }
         if root.children.count < 1 {
@@ -242,6 +242,8 @@ public class RadixTree {
                         searchStr = searchStr.substring(from: range.upperBound)
                         found = true
                         break
+                    }else if sharedStr == searchStr {
+                        return true
                     } else {
                         return false
                     }
