@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
 import Heap
+
 public func heapSort<T: Sortable>(_ array: [T]) -> [T] {
     var heap = Heap<T>()
     heap.buildFromArray(array)

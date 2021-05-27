@@ -162,6 +162,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AFA466A61E010E0300ACC71D;
@@ -335,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -356,7 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.Deque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -405,6 +406,7 @@
 				AFA466C61E010E0300ACC71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFA466C71E010E0300ACC71D /* Build configuration list for PBXNativeTarget "DequeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +415,7 @@
 				AFA466C91E010E0300ACC71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

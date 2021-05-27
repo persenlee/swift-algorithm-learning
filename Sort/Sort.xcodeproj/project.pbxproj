@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98855F99265FCB4B00D68526 /* Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF996A8F1E0264F300014A47 /* Sort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF996A931E0264F300014A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF996A981E0264F300014A47 /* SortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +47,6 @@
 		AF996AB51E0265AC00014A47 /* HeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		AF996AB71E0265B500014A47 /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		AF996AB91E02662400014A47 /* CountingSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
-		AF996ABC1E0279A300014A47 /* Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sort.playground; sourceTree = "<group>"; };
 		B397EDA01E067E00002FB459 /* Heap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Heap.framework; path = "../../../Library/Developer/Xcode/DerivedData/swift-algorithm-learning-fudtflkqxcrfybgblqlyxszykowz/Build/Products/Debug/Heap.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +102,7 @@
 				AF996AB51E0265AC00014A47 /* HeapSort.swift */,
 				AF996AB71E0265B500014A47 /* MergeSort.swift */,
 				AF996AB91E02662400014A47 /* CountingSort.swift */,
-				AF996ABC1E0279A300014A47 /* Sort.playground */,
+				98855F99265FCB4B00D68526 /* Sort.playground */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -199,6 +199,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AF996A851E0264F300014A47;
@@ -379,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -400,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.Sort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

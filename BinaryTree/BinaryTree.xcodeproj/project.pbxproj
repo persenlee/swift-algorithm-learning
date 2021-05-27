@@ -173,6 +173,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AF81EF0A1E091EC800F794FB;
@@ -345,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -366,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.persenlee.BinaryTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -415,6 +416,7 @@
 				AF81EF2A1E091EC900F794FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF81EF2B1E091EC900F794FB /* Build configuration list for PBXNativeTarget "BinaryTreeTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +425,7 @@
 				AF81EF2D1E091EC900F794FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

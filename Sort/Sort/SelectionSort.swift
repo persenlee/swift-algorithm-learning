@@ -17,7 +17,7 @@ public func selectionSort<T: Comparable>(_ array: inout [T]) {
             }
         }
         if i != minIndex {
-            swap(&array[i], &array[minIndex])
+            array.swapAt(i, minIndex)
         }
     }
 }

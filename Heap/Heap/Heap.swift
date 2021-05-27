@@ -11,6 +11,7 @@ import Foundation
 
 public struct Heap<T: Comparable>{
     fileprivate var array = [T]()
+    
     public var count: Int {
         return array.count
     }
@@ -64,7 +65,7 @@ public struct Heap<T: Comparable>{
         guard index < count else {return nil}
         let element = array[index]
         if index != count - 1 {
-            swap(&array[index], &array[count - 1])
+            array.swapAt(index, count - 1)
             array.removeLast()
             shiftUp(index: index)
             shiftDown(index: index)
@@ -106,7 +107,7 @@ public struct Heap<T: Comparable>{
             }
             
             if maxIndex != parentIndex {
-                swap(&self.array[maxIndex], &self.array[parentIndex])
+                self.array.swapAt(maxIndex, parentIndex)
                 parentIndex = maxIndex
             } else {
                 return
@@ -128,7 +129,7 @@ extension Heap: CustomStringConvertible {
 extension Heap {
     public mutating func sort() -> [T] {
         for i in stride(from:array.count - 1, through: 1, by: -1) {
-            swap(&array[0], &array[i])
+            array.swapAt(0, i)
             shiftDown(index: 0, heapSize: i)
         }
         return array
@@ -154,7 +155,7 @@ extension Heap {
             
             
             if maxIndex != parentIndex {
-                swap(&self.array[maxIndex], &self.array[parentIndex])
+                self.array.swapAt(maxIndex, parentIndex)
                 parentIndex = maxIndex
             } else {
                 return

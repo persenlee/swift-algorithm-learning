@@ -12,7 +12,7 @@ public func bubbleSort<T: Comparable>(_ array: inout [T]) {
     for i in 0..<array.count {
         for j in 0..<array.count - i-1 {
             if array[j] > array[j+1] {
-                swap(&array[j],&array[j+1])
+                array.swapAt(j, j+1)
             }
         }
     }
