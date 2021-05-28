@@ -7,8 +7,8 @@ import Sort
 //bubbleSort(&bubbleArray)
 //
 ////quick sort
-var quickArray = [4,5,1,34,0,9,3,8,22]
-quickSort(&quickArray, left: 0, right: quickArray.count - 1)
+//var quickArray = [4,5,1,34,0,9,3,8,22]
+//quickSort(&quickArray, left: 0, right: quickArray.count - 1)
 //
 ////selection sort
 //var selectionArray = [4,5,1,34,0,9,3,8,22]
@@ -29,3 +29,7 @@ quickSort(&quickArray, left: 0, right: quickArray.count - 1)
 //reudce insertion sort
 //var shellInsertionArray = [4,5,1,34,0,9,3,8,22]
 //shellSort(&shellInsertionArray, partial: shellInsertionArray.count / 2 )
+
+//merge sort
+var mergeArray = [4,5,1,34,0,9,3,8,22]
+let sortedArray = mergeSort(mergeArray)
